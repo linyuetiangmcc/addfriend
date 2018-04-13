@@ -28,9 +28,9 @@ public class AddFriendTest {
         String result =  "";
         String logStr = "";
 
-        long commandId=370512021;
+        long commandId=374200489;
 
-        for(; commandId <=370558042 + 20;commandId ++ ){
+        for(; commandId <=374200489 + 20;commandId ++ ){
             content = "parm=" + commandId;
             logStr = "";
             result = httpClientUtil.doPost(url_addfriend,httpHeadMap,charset,content);

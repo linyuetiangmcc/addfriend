@@ -31,7 +31,7 @@ public class AddFriend {
         String content = "";
         String result =  "";
         String logStr = "";
-
+        logger.info(cookie);
         for (Friend friend:friends
              ) {
             content = "parm=" + friend.getCommendId();

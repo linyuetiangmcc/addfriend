@@ -53,7 +53,7 @@ public class MaybeFriend {
         friends.clear();
         //{"lean":"0","success":true,"pageNo":"0","pageSum":34,"openId":"oggN1jiZF8AthajXkotabFE6lbmk","totals":200,"list":""}
         String total_result = httpClientUtil.doPost(url_getfriend, httpHeadMap, charset, "stateNo=0&showPage=1");
-        System.out.print(total_result);
+        //System.out.print(total_result);
         FriendGroup friendGroup = new Gson().fromJson(total_result,FriendGroup.class);
 
         System.out.println("total friends is: " + friendGroup.getTotal());
